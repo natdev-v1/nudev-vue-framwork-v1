@@ -4,8 +4,8 @@ import Vuex from "vuex";
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {},
+  state: { token: localStorage.getItem("user-token") || "" },
   mutations: {},
   actions: {},
-  modules: {}
+  modules: {},
 });
